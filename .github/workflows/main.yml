@@ -5,5 +5,8 @@ on:
 
 jobs:
   pkgs-test:
-    uses: vacabun/action-demo@main
+    runs-on: ubuntu-latest
+    name: Scan code format and license
+    steps:
+      - uses: vacabun/action-demo@main
     
