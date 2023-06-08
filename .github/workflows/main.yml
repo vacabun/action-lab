@@ -1,0 +1,8 @@
+name: action-lab
+
+on:
+  [push, pull_request]
+
+jobs:
+  pkgs-test:
+    uses: vacabun/action-demo@main
