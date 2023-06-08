@@ -4,9 +4,9 @@ on:
   [push, pull_request]
 
 jobs:
-  pkgs-test:
+  job0:
     runs-on: ubuntu-latest
-    name: Scan code format and license
+    name: job0
     steps:
       - uses: vacabun/action-demo@main
     
