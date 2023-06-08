@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     name: job0
     steps:
-      - uses: vacabun/action-demo
+      - uses: vacabun/action-demo@main
     
