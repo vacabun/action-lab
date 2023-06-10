@@ -9,4 +9,14 @@ jobs:
     name: job0
     steps:
       - uses: vacabun/action-demo@main
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "${{ github.workspace }}"
+          echo "${{ github.repository }}"
+  pkgs-test:
+    uses: vacabun/pkgs-test/.github/workflows/pkgs-action.yml@dev
+          
+          
     
