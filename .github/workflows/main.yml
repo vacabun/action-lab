@@ -16,7 +16,7 @@ jobs:
           echo "${{ github.workspace }}"
           echo "${{ github.repository }}"
   pkgs-test:
-    uses: vacabun/pkgs-test/.github/workflows/pkgs-action.yml@dev
+    uses: vacabun/action-demo/.github/workflows/main.yml@main
           
           
     
