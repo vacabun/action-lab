@@ -17,6 +17,19 @@ jobs:
           echo "${{ github.repository }}"
   pkgs-test:
     uses: vacabun/action-demo/.github/workflows/main.yml@main
+    
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: |
+          mkdir public
+          echo "<!DOCTYPE html><html><head><title>HTML Page</title></head><body><h1>Hello, World!</h1></body></html>" > public/index.html
+      # 将 public 目录下生成的静态网站文件上传到 gh-pages 分支
+      - uses: jamesives/github-pages-deploy-action@releases/v4
+        with:
+          branch: gh-pages
+          folder: public
           
           
     
