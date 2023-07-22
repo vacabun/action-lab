@@ -15,8 +15,12 @@ jobs:
       - run: |
           echo "${{ github.workspace }}"
           echo "${{ github.repository }}"
-  pkgs-test:
+  action-demo:
     uses: vacabun/action-demo/.github/workflows/main.yml@main
+    with:
+      list: |-
+        input_1
+        input_2
  
           
           
