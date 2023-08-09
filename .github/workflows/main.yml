@@ -21,6 +21,17 @@ jobs:
       list: |-
         input_1
         input_2
+  pkgs-test:
+    uses: vacabun/pkgs-test/.github/workflows/pkgs-action.yml@fix_check_error
+    with:
+        package-append-res: false
+        deploy-pages: false
+        pkgs-test-repository: vacabun/pkgs-test
+        pkgs-test-branch: feature_input_pkgs_list
+        test-specific-pkgs: true
+        pkgs: |
+          hello
+          LiteOS-SDK
  
           
           
