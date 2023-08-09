@@ -22,7 +22,7 @@ jobs:
         input_1
         input_2
   pkgs-test:
-    uses: vacabun/pkgs-test/.github/workflows/pkgs-action.yml@fix_check_error
+    uses: vacabun/pkgs-test/.github/workflows/pkgs-action.yml@feature_input_pkgs_list
     with:
         package-append-res: false
         deploy-pages: false
