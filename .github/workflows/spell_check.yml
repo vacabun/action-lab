@@ -27,7 +27,7 @@ jobs:
     - uses: actions/checkout@v4.0.0
     - name: output info
       run: |
-        echo "If any words are spelled correctly, please add them to `.github/actions/spelling/allow.txt`." >> $GITHUB_STEP_SUMMARY
+        echo "If any words are spelled correctly, please add them to .github/actions/spelling/allow.txt" >> $GITHUB_STEP_SUMMARY
     - name: check spelling
       id: spelling
       uses: check-spelling/check-spelling@main
