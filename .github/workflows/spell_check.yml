@@ -25,3 +25,5 @@ jobs:
       uses: check-spelling/check-spelling@main
       with:
         only_check_changed_files: 1
+        extra_dictionaries:
+          cspell:software-terms/dict/softwareTerms.txt
