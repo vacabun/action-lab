@@ -36,4 +36,7 @@ jobs:
         post_comment: 0
         extra_dictionaries:
           cspell:software-terms/dict/softwareTerms.txt
+    - name: output Success
+      run: |
+        echo "✅ Check spelling success." >> $GITHUB_STEP_SUMMARY
 
